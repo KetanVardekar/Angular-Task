@@ -1,0 +1,12 @@
+.outer-container{
+  background-color: aquamarine;
+  color: black;
+  padding: 13px 13px;
+  justify-content: space-between;
+}
+.addEmployee{
+  padding: 11px 29px;
+  border-radius: 12px;
+  background: aliceblue;
+}
+

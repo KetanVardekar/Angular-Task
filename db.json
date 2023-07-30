@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "firstName": "Ketan",
+      "lastName": "Vardekar",
+      "email": "vketan2188@gmail.com",
+      "address": "Surat",
+      "password": "Ketan@123",
+      "confirmPassword": "Ketan@123",
+      "id": 1
+    }
+  ],
+  "employees": [
+
+    {
+      "name": "mom",
+      "address": "surat",
+      "age": 34,
+      "mobile": 99998766,
+      "email": "vketan2188@gmail.com",
+      "id": 4
+    }
+  ]
+}

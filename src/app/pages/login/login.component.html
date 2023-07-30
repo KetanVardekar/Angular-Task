@@ -1,0 +1,19 @@
+ <h1 class="d-flex justify-content-center">Login</h1>
+<form class="auth-container">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control"  name="email" [(ngModel)]="loginData.email" placeholder="Enter email" readonly email #email="ngModel">
+
+    <div *ngIf="email.errors?.['required']">Email is Required.</div>
+    <div *ngIf="email.errors?.['email']">Enter Valid Email</div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name ="password" [(ngModel)]="loginData.password" pattern="^(?=.*[0-9a-zA-Z]).{6,}$" #password="ngModel" placeholder="Password">
+    <div *ngIf="password.errors?.['required']">Password is Required.</div>
+    <div *ngIf="password.errors?.['pattern']">Password must be alphanumeric and at least 6 characters long.</div>
+  </div>
+
+   <div>New User ? <span class="signup" style="cursor: pointer;" (click)="signup()" >SignUp</span></div>
+  <button type="submit" class="btn btn-primary" (click)="login(loginData)">Submit</button>
+</form>
